@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Logon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="login">
+        <div class="btns-login">
+            <button class="btn-entrar ativo">Entrar</button>
+            <button class="btn-cadastro">Criar conta</button>
+        </div>
+        <div class="container">
+            <form action="" class="form-entrar ativo" method="post" id="entrar">
+                <div class="username-field ct-input">
+                    <label for="usuario-entrar">Usuário ou email</label>
+                    <input type="text" name="usuario-entrar" id="usuario-entrar" placeholder="Nome de usuário ou email">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-times-circle"></i>
+
+                </div>
+
+                <div class="senha-field ct-input">
+                    <label for="senha-entrar">Senha</label>
+                    <input type="password" name="senha-entrar" id="senha-entrar" placeholder="********">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-times-circle"></i>
+
+                </div>
+
+                <a href="" class="forgot">Esqueci meu nome de usuário ou senha</a>
+
+                <button type="submit" class="submit">Entrar</button>
+            </form>
+
+            <form action="" class="form-criar-conta" id="criar">
+                <div class="username-field ct-input">
+                    <label for="usuario">Usuário</label>
+                    <input type="text" name="usuario" id="usuario" minlength="6" placeholder="Escolha um nome de usuário">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-times-circle"></i>
+                </div>
+
+                <div class="email-field ct-input">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="seuemail@email.com">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-times-circle"></i>
+                </div>
+
+                <div class="password-field ct-input">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha" minlength="8" placeholder="Escolha uma senha forte">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-times-circle"></i>
+                </div>
+
+                <div class="password-repeat-field ct-input">
+                    <label for="senha-rpt">Repita sua senha</label>
+                    <input type="password" name="senha-rpt" id="senha-rpt" placeholder="Repita sua senha" disabled>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-times-circle"></i>
+                </div>
+
+                <div class="termos-field">
+                   <input type="checkbox" name="termos" id="termos">
+                   <label for="termos">Li e concordo com os <a href="">Termos e Condições</a></label>
+                </div>
+
+                <button type="submit" class="submit" id="submit-conta">Criar conta</button>
+            </form>
+     
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
