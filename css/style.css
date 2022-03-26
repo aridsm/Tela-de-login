@@ -149,7 +149,7 @@ form.ativo {
 }
 
 input:focus {
-  outline: 3px solid rgba(98, 188, 84, 0.5);
+  outline: 3px solid rgba(24, 129, 153, 0.5);
 }
 
 .submit {
@@ -160,6 +160,10 @@ input:focus {
   border-radius: 4px;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.submit:hover {
+  background: #127288;
 }
 
 .forgot {

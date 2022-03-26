@@ -1,7 +1,6 @@
 const btns = document.querySelectorAll('.btns-login button')
 const allInputs = document.querySelectorAll('.ct-input input')
 
-
 allInputs.forEach((item) => {
 item.addEventListener('keydown', (k) => {
     if (k.keyCode === 32) {
@@ -26,6 +25,13 @@ btns.forEach((item, index) => {
         changeForm(index)
     })
 })
+
+/* validacao */
+// Fazer a validação com regex.
+// O nome de usuário deve conter, no máximo, 20 caracteres.
+// A senha deve conter, pelo menos, um número e um caractere especial (@ ! # $ % & * (){}[] " ' _ - /\>< : ; ´) e no mínimo 10 caracteres
+// As senhas deve m ser iguais
+// O email deve conter caracteres, pontos, numeros, _ - em qualquer quantidade até o @. Depois do @ deve conter letras ou . e terminar com uma letra
 
 function validationForm(t) {
     const f = t.parentElement
