@@ -7,7 +7,7 @@
     <title>Login</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -21,11 +21,10 @@
             <form action="" class="form-entrar ativo" method="post" id="entrar">
                 <div class="username-field ct-input">
                     <label for="usuario-entrar">Usuário ou email</label>
-                    <input type="text" name="usuario-entrar" id="usuario-entrar" placeholder="Nome de usuário ou email">
+                    <input type="text" name="usuario-entrar" id="usuario-entrar" placeholder="user123">
                     <i class="fas fa-exclamation-circle"></i>
                     <i class="fas fa-check-circle"></i>
                     <i class="fas fa-times-circle"></i>
-
                 </div>
 
                 <div class="senha-field ct-input">
@@ -34,18 +33,23 @@
                     <i class="fas fa-exclamation-circle"></i>
                     <i class="fas fa-check-circle"></i>
                     <i class="fas fa-times-circle"></i>
-
                 </div>
 
-                <a href="" class="forgot">Esqueci meu nome de usuário ou senha</a>
+                <label for="lembrar" class="lembrar-label">
+                    <input type="checkbox" name="lembrar" id="lembrar">
+                    Lembrar-me
+                </label>
+                
 
                 <button type="submit" class="submit">Entrar</button>
+
+                <a href="" class="forgot">Esqueci meu nome de usuário ou senha</a>
             </form>
 
             <form action="" class="form-criar-conta" id="criar">
                 <div class="username-field ct-input">
                     <label for="usuario">Usuário</label>
-                    <input type="text" name="usuario" id="usuario" minlength="6" placeholder="Escolha um nome de usuário">
+                    <input type="text" name="usuario" id="usuario" minlength="6" placeholder="user123">
                     <i class="fas fa-exclamation-circle"></i>
                     <i class="fas fa-check-circle"></i>
                     <i class="fas fa-times-circle"></i>
@@ -61,7 +65,7 @@
 
                 <div class="password-field ct-input">
                     <label for="senha">Senha</label>
-                    <input type="password" name="senha" id="senha" minlength="8" placeholder="Escolha uma senha forte">
+                    <input type="password" name="senha" id="senha" minlength="8" placeholder="*******">
                     <i class="fas fa-exclamation-circle"></i>
                     <i class="fas fa-check-circle"></i>
                     <i class="fas fa-times-circle"></i>
@@ -69,7 +73,7 @@
 
                 <div class="password-repeat-field ct-input">
                     <label for="senha-rpt">Repita sua senha</label>
-                    <input type="password" name="senha-rpt" id="senha-rpt" placeholder="Repita sua senha" disabled>
+                    <input type="password" name="senha-rpt" id="senha-rpt" placeholder="*******" disabled>
                     <i class="fas fa-exclamation-circle"></i>
                     <i class="fas fa-check-circle"></i>
                     <i class="fas fa-times-circle"></i>
