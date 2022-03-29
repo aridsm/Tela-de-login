@@ -1,5 +1,21 @@
 const btns = document.querySelectorAll('.btns-login button')
 const allInputs = document.querySelectorAll('.ct-input input')
+const inputsCriarConta = document.querySelectorAll('#criar .ct-input input')
+const listaAlertas = document.querySelector('.lista-alertas')
+
+
+const validacao = {
+    email: {
+        regex: /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+        mensagem: 'O email inserido não é válido',
+        id: 'alerta1'
+    },
+    senha: {
+        regex:'al',
+        mensagem: 'A senha deve conter no mínimo 10 caracteres, uma letra maiúscula, um caractere especial e um número',
+        id: 'alerta2'
+    }
+}
 
 allInputs.forEach((item) => {
 item.addEventListener('keydown', (k) => {
@@ -26,6 +42,7 @@ btns.forEach((item, index) => {
     })
 })
 
+console.log(inputsCriarConta)
 /* validacao */
 // Fazer a validação com regex.
 // O nome de usuário deve conter, no máximo, 20 caracteres.
@@ -33,6 +50,27 @@ btns.forEach((item, index) => {
 // As senhas deve m ser iguais
 // O email deve conter caracteres, pontos, numeros, _ - em qualquer quantidade até o @. Depois do @ deve conter letras ou . e terminar com uma letra
 
+//ao mudar o valor de input, será verificado (test) se o regex de email e senha satisfazem o valor do input,
+//O input de usuario não precisa ser testado.
+//O input de repetir senha deve fazer match com a senha anterior.
+
+
+function validateInput({target}) {
+    if (validacao[target.id]) {
+        if (!(target.value).match(validacao[target.id].regex)) {
+            const newLi = document.createElement('li')
+            newLi.id = validacao[target.id].id
+            newLi.innerText = validacao[target.id].mensagem
+            listaAlertas.appendChild(newLi)
+        } else {
+            const li = document.querySelector(`#${validacao[target.id].id}`)
+            listaAlertas.removeChild(li)
+        }
+    }
+}
+
+inputsCriarConta.forEach(input => input.addEventListener('change', validateInput))
+/*
 function validationForm(t) {
     const f = t.parentElement
     f.classList.remove('valido', 'invalido', 'atencao')
@@ -101,3 +139,4 @@ document.addEventListener('invalid', (e) => {
     e.preventDefault()
 }, true)
 
+*/
