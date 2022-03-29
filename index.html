@@ -53,6 +53,7 @@
                     <i class="fas fa-exclamation-circle"></i>
                     <i class="fas fa-check-circle"></i>
                     <i class="fas fa-times-circle"></i>
+                    <span class="alert">O nome de usuário deve conter apenas números, letras (maiúsculas ou minúsculas) ou _ e deve possuir, ao menos, 5 caracteres.</span>
                 </div>
 
                 <div class="email-field ct-input">
@@ -61,29 +62,32 @@
                     <i class="fas fa-exclamation-circle"></i>
                     <i class="fas fa-check-circle"></i>
                     <i class="fas fa-times-circle"></i>
+                    <span class="alert">O valor digitado não corresponde a um email.</span>
                 </div>
 
                 <div class="password-field ct-input">
                     <label for="senha">Senha</label>
-                    <input type="password" name="senha" id="senha" minlength="8" placeholder="*******">
+                    <input type="password" name="senha" id="senha" minlength="8" placeholder="********">
                     <i class="fas fa-exclamation-circle"></i>
                     <i class="fas fa-check-circle"></i>
                     <i class="fas fa-times-circle"></i>
+                    <span class="alert">A senha deve possuir no mínimo 8 caracteres, 1 letra maiúscula, 1 letra minúscula e 1 caractere especial.</span>
                 </div>
 
                 <div class="password-repeat-field ct-input">
-                    <label for="senha-rpt">Repita sua senha</label>
-                    <input type="password" name="senha-rpt" id="senha-rpt" placeholder="*******" disabled>
+                    <label for="senharpt">Repita sua senha</label>
+                    <input type="password" name="senharpt" id="senharpt" placeholder="********" disabled>
                     <i class="fas fa-exclamation-circle"></i>
                     <i class="fas fa-check-circle"></i>
                     <i class="fas fa-times-circle"></i>
+                    <span class="alert">As senhas não correspondem</span>
                 </div>
 
                 <div class="termos-field">
                    <input type="checkbox" name="termos" id="termos">
                    <label for="termos">Li e concordo com os <a href="">Termos e Condições</a></label>
                 </div>
-                <ul class="lista-alertas"></ul>
+              
                 <button type="submit" class="submit" id="submit-conta">Criar conta</button>
             </form>
      

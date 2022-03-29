@@ -110,24 +110,18 @@ form.ativo {
 
 .ct-input i {
   position: absolute;
-  top: 18px;
+  top: 45px;
   right: 10px;
   display: none;
 }
 
-.valid {
-  display: block;
-  margin-top: 5px;
-  font-size: 14px;
-}
-
 .ct-input.invalido i.fa-times-circle {
-  color: rgba(212, 72, 72);
+  color: rgb(192, 47, 47);
   display: block;
 }
 
-.ct-input.invalido .valid {
-  color: rgba(212, 72, 72);
+.ct-input.invalido input {
+  border: 2px solid rgb(192, 47, 47);
 }
 
 .ct-input.valido i.fa-check-circle {
@@ -135,8 +129,8 @@ form.ativo {
   display: block;
 }
 
-.ct-input.atencao .valid {
-  color: rgb(180, 167, 50);
+.ct-input.atencao input {
+  border: 2px solid rgb(192, 47, 47);
 }
 
 .ct-input.atencao i.fa-exclamation-circle {
@@ -177,6 +171,11 @@ input:focus {
 .lembrar-label {
   margin-top: 20px;
   display: block;
+}
+
+.alert {
+  font-size: 0.875rem;
+  display: none;
 }
 
 input:disabled {
