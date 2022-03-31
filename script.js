@@ -40,10 +40,22 @@ btns.forEach((item, index) => {
 
 })
 
+
 function validateInput(event, index) {
 
     const { value, id } = event.target;
     const inputField = event.target.parentElement;
+
+    function contemClasse(classe) {
+        return inputField.classList.contains(classe);
+    }
+
+    function eliminarClasse(classe) {
+        inputField.classList.remove(classe);
+    }    
+
+    if (contemClasse('invalido')) eliminarClasse('invalido');
+    if (contemClasse('valido')) eliminarClasse('valido');
 
     if (regex[id]) {
         if (!(value).match(regex[id])) {

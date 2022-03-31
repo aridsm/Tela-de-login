@@ -10,7 +10,11 @@ body {
   font-family: "M PLUS 1", sans-serif;
   color: #6e7779;
   font-size: 16px;
-  padding: 80px 15px;
+  padding: 50px 15px;
+}
+
+body.darkmode {
+  background: #282929;
 }
 
 button {
@@ -69,7 +73,7 @@ button.ativo {
 }
 
 .container {
-  padding: 50px 30px;
+  padding: 30px;
 }
 
 .form-entrar {
@@ -116,25 +120,16 @@ form.ativo {
 }
 
 .ct-input.invalido i.fa-times-circle {
-  color: rgb(192, 47, 47);
+  color: #ec3030;
   display: block;
 }
 
 .ct-input.invalido input {
-  border: 2px solid rgb(192, 47, 47);
+  border: 2px solid #ec3030;
 }
 
 .ct-input.valido i.fa-check-circle {
   color: rgb(77, 212, 72);
-  display: block;
-}
-
-.ct-input.atencao input {
-  border: 2px solid rgb(192, 47, 47);
-}
-
-.ct-input.atencao i.fa-exclamation-circle {
-  color: rgb(180, 167, 50);
   display: block;
 }
 
@@ -143,13 +138,13 @@ form.ativo {
 }
 
 input:focus {
-  outline: 2px solid rgba(202, 95, 45, 0.5);
+  outline: 2px solid #21a15b;
 }
 
 .submit {
   width: 100%;
   padding: 15px 10px;
-  background: #ca5f2d;
+  background: #21a15b;
   color: white;
   border-radius: 4px;
   margin-top: 20px;
@@ -158,7 +153,7 @@ input:focus {
 }
 
 .submit:hover {
-  background: #b45123;
+  background: #199450;
 }
 
 .forgot {
