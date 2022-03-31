@@ -5,16 +5,24 @@
 }
 
 body {
-  background: #f5f7f8;
   margin: 0;
   font-family: "M PLUS 1", sans-serif;
   color: #6e7779;
   font-size: 16px;
-  padding: 50px 15px;
+  padding: 90px 15px;
+  color: #6e7779;
+  background: #f5f7f8;
+  --bg-login: #fff;
+  --bg-input: #f5f7f880;
+  --border: #dfdfdf;
 }
+
 
 body.darkmode {
   background: #282929;
+  --bg-login: #1d1f1f;
+  --bg-input: #282929;
+  --border: #080808;
 }
 
 button {
@@ -44,32 +52,37 @@ input::placeholder {
 
 .login {
   max-width: 430px;
-  background: white;
+  background: var(--bg-login);
   margin: 0 auto;
   border-radius: 5px;
   overflow: hidden;
-  border: 1px solid #e5e5e5;
+  border: 1px solid var(--border);
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
 }
 
 .btns-login {
   display: flex;
 }
+
 .btns-login > * {
   flex: 1;
   padding: 15px;
   transition: all 0.2s ease;
 }
 
+.btns-login button {
+  background: var(--bg-input);
+}
+
 .btns-login button:hover {
-  background: rgb(230, 230, 230);
+  background: var(--bg-login);
 }
 
 button.ativo {
-  background: white;
+  background: var(--bg-login);
 }
 .btns-login button.ativo:hover {
-  background: white;
+  background: var(--bg-login);
 }
 
 .container {
@@ -106,10 +119,10 @@ form.ativo {
 .ct-input input {
   width: 100%;
   display: block;
-  background: rgba(245, 247, 248, 0.5);
+  background: var(--bg-input);
   border-radius: 4px;
   padding: 15px 10px;
-  border: 1px solid rgba(229, 229, 229, 0.5);
+  border: 1px solid var(--border);
 }
 
 .ct-input i {
@@ -171,8 +184,19 @@ input:focus {
 .alert {
   font-size: 0.875rem;
   display: none;
+  margin-top: 5px;
 }
 
-input:disabled {
-  background: #d3d3d3;
+.lightdarkmode {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 30px;
+  background: transparent;
+  color: #21a15b
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
 }
