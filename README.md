@@ -4,7 +4,7 @@ Formulários feitos com CSS, HTML & Javascript.
 
 ## Formulário de login
 Conta com campos de input de:
-- Nome de suário ou email
+- Nome de usuário ou email
 - Senha
 - Link de *esqueceu a senha*
 
@@ -14,6 +14,7 @@ Conta com campos de input de:
 - Email
 - Senha
 - Repetição de senha
+- Campo de concordar com *termos e condições*
 
 O formulário de cadastro foi feito com validação de dados com **Regex**.
 
