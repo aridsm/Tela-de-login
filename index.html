@@ -1,32 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulários de login e tela de cadastro de usuário com validaçao">
+    <meta name="keywords" content="validaçao, regex, usuario, login, cadastro">
+    <meta name="author" content="Ariane Morelato">
+    <meta name="theme-color" content="#0c813f">
     <title>Login</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+    <h1>Formulário de login & cadastro</h1>
     <section class="login">
         <div class="btns-login">
-            <button class="btn-entrar ativo">Entrar</button>
-            <button class="btn-cadastro">Criar conta</button>
+            <button class="btn-entrar ativo" type="button">Entrar</button>
+            <button class="btn-cadastro" type="button">Criar conta</button>
         </div>
         <div class="container">
-            <form action="" class="form-entrar ativo" method="post" id="entrar">
+            <form action="#" class="form-entrar ativo" method="post" id="entrar">
                 <div class="username-field ct-input">
                     <label for="usuario-entrar">Usuário ou email</label>
-                    <input type="text" name="usuario-entrar" id="usuario-entrar" placeholder="user123">                  
+                    <input type="text" name="usuario-entrar" id="usuario-entrar" placeholder="user123">
                 </div>
 
                 <div class="senha-field ct-input">
                     <label for="senha-entrar">Senha</label>
-                    <input type="password" name="senha-entrar" id="senha-entrar" placeholder="********">                  
+                    <input type="password" name="senha-entrar" id="senha-entrar" placeholder="********">
                 </div>
 
                 <label for="lembrar" class="lembrar-label">
@@ -36,10 +43,10 @@
 
                 <button type="submit" class="submit">Entrar</button>
 
-                <a href="" class="forgot">Esqueci meu nome de usuário ou senha</a>
+                <a href="/" class="forgot">Esqueci meu nome de usuário ou senha</a>
             </form>
 
-            <form action="" class="form-criar-conta" id="criar">
+            <form action="#" class="form-criar-conta" id="criar" method="post">
                 <div class="username-field ct-input">
                     <label for="usuario">Usuário</label>
                     <input type="text" name="usuario" id="usuario" placeholder="user123">
@@ -69,16 +76,17 @@
                     <span class="alert">As senhas não correspondem</span>
                 </div>
                 <div class="termos-field">
-                   <input type="checkbox" name="termos" id="termos">
-                   <label for="termos">Li e concordo com os <a href="">Termos e Condições</a></label>
+                    <input type="checkbox" name="termos" id="termos">
+                    <label for="termos">Li e concordo com os <a href="/">Termos e Condições</a></label>
                 </div>
-              
+
                 <button type="submit" class="submit" id="submit-conta">Criar conta</button>
             </form>
         </div>
     </section>
-    <button class="lightdarkmode" aria-label="ativar darkmode ou lightmode"><i class="fa-solid fa-sun"></i></button>
+    <button class="lightdarkmode" aria-label="ativar darkmode ou lightmode" type="button"><i class="fa-solid fa-sun"></i></button>
     <footer>By <a href="https://github.com/aridsm">Ariane Morelato</a></footer>
     <script src="script.js"></script>
 </body>
+
 </html>

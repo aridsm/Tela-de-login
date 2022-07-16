@@ -7,10 +7,9 @@
 body {
   margin: 0;
   font-family: "M PLUS 1", sans-serif;
-  color: #6e7779;
+  color: #494f50;
   font-size: 16px;
-  padding: 90px 15px;
-  color: #6e7779;
+  padding: 50px 15px;
   background: #f5f7f8;
   --bg-login: #fff;
   --bg-input: #f5f7f880;
@@ -19,6 +18,7 @@ body {
 
 
 body.darkmode {
+  color: #f5f7f8;
   background: #282929;
   --bg-login: #1d1f1f;
   --bg-input: #282929;
@@ -50,6 +50,11 @@ input::placeholder {
   color: #aaaaaa;
 }
 
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
 .login {
   max-width: 430px;
   background: var(--bg-login);
@@ -64,7 +69,7 @@ input::placeholder {
   display: flex;
 }
 
-.btns-login > * {
+.btns-login>* {
   flex: 1;
   padding: 15px;
   transition: all 0.2s ease;
@@ -74,13 +79,8 @@ input::placeholder {
   background: var(--bg-input);
 }
 
-.btns-login button:hover {
-  background: var(--bg-login);
-}
-
-button.ativo {
-  background: var(--bg-login);
-}
+.btns-login button:hover,
+button.ativo,
 .btns-login button.ativo:hover {
   background: var(--bg-login);
 }
@@ -89,10 +89,7 @@ button.ativo {
   padding: 30px;
 }
 
-.form-entrar {
-  display: none;
-}
-
+.form-entrar,
 .form-criar-conta {
   display: none;
 }
@@ -112,7 +109,7 @@ form.ativo {
   display: block;
 }
 
-.ct-input + .ct-input {
+.ct-input+.ct-input {
   margin-top: 40px;
 }
 
@@ -151,13 +148,13 @@ form.ativo {
 }
 
 input:focus {
-  outline: 2px solid #21a15b;
+  outline: 2px solid #0c813f;
 }
 
 .submit {
   width: 100%;
   padding: 15px 10px;
-  background: #21a15b;
+  background: #0c813f;
   color: white;
   border-radius: 4px;
   margin-top: 20px;
@@ -166,14 +163,14 @@ input:focus {
 }
 
 .submit:hover {
-  background: #199450;
+  background: #259758;
 }
 
 .forgot {
   margin-top: 20px;
   text-align: center;
   display: block;
-  color: #188299;
+  color: #0d6579;
 }
 
 .lembrar-label {
