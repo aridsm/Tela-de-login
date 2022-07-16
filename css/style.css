@@ -166,6 +166,10 @@ input:focus {
   background: #259758;
 }
 
+.darkmode .forgot {
+  color: #237d91
+}
+
 .forgot {
   margin-top: 20px;
   text-align: center;
