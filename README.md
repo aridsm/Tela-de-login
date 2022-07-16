@@ -3,13 +3,13 @@
 Formulários feitos com CSS, HTML & Javascript. 
 
 ## Formulário de login
-Conta com campos de input de:
+Com campos de input de:
 - Nome de usuário ou email
 - Senha
-- Link de *esqueceu a senha*
+E link de *esqueceu a senha*
 
 ## Formulário de cadastro
-Conta com campos de input de:
+Com campos de input de:
 - Usuário
 - Email
 - Senha
@@ -19,6 +19,3 @@ Conta com campos de input de:
 O formulário de cadastro foi feito com validação de dados com **Regex**.
 
 Link: https://aridsm.github.io/Tela-de-login/
-
-![página](https://github.com/aridsm/Tela-de-login/blob/main/page.gif)
-
