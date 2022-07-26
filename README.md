@@ -2,6 +2,9 @@
 
 Formulários feitos com CSS, HTML & Javascript. 
 
+![pagina versao modo escuro](https://github.com/aridsm/Tela-de-login/blob/main/login_dark.jpg)
+![pagina versao modo claro](https://github.com/aridsm/Tela-de-login/blob/main/login_light.jpg)
+
 ## Formulário de login
 Com campos de input de:
 - Nome de usuário ou email
